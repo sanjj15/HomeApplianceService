@@ -1,0 +1,53 @@
+CREATE TABLE customer_tbl (
+    customer_i     VARCHAR2(10) PRIMARY KEY,
+    full_name      VARCHAR2(50),
+    mobile         VARCHAR2(15),
+    email          VARCHAR2(100),
+    address_line1 VARCHAR2(100),
+    address_line2 VARCHAR2(100),
+    city           VARCHAR2(30),
+    status         VARCHAR2(10)
+);
+INSERT INTO customer_tbl VALUES
+('CU1001','Rahul Mehta','9876500001',
+ 'rahul.mehta@example.com',
+ 'Flat 2B, Green Residency',
+ 'Near City Park',
+ 'Chennai','ACTIVE');
+
+INSERT INTO customer_tbl VALUES
+('CU1002','Priya Sharma','9876500002',
+ 'priya.sharma@example.com',
+ 'No.12 Lakshmi Street',
+ 'Anna Nagar',
+ 'Chennai','ACTIVE');
+
+INSERT INTO customer_tbl VALUES
+('CU1003','Arjun Nair','9876500003',
+ 'arjun.nair@example.com',
+ 'House 5, River View',
+ NULL,
+ 'Coimbatore','INACTIVE');
+
+INSERT INTO customer_tbl VALUES
+('CU2001','Meenakshi Rao','9998887771',
+ 'meenakshi.rao@example.com',
+ 'Flat 5C, Sunrise Apartments',
+ 'Near Central Park',
+ 'Chennai','ACTIVE');
+
+INSERT INTO customer_tbl VALUES
+('001','Meenakshi Rao','9998887771',
+ 'meenakshi.rao@example.com',
+ 'Flat 5C, Sunrise Apartments',
+ 'Near Central Park',
+ 'Chennai','ACTIVE');
+
+INSERT INTO customer_tbl VALUES
+('003','Meenakshi','9998886671',
+ 'meenakshi@example.com',
+ 'Flat 5A, Sunrise Apartments',
+ 'Near Park',
+ 'Ooty','ACTIVE');
+
+COMMIT;
